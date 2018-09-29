@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<p>You picked <span id="p1">Blank</span></p>
+
+<script>
+
+	var player = ("1", "2");
+	var randomNumber = ["r", "p", "s"];
+
+	// Random Number Variable
+	
+
+	document.onkeyup = function(event) {
+		var x = event.keyCode;
+		if (x == 80) {
+			document.getElementById("p1").innerHTML = "Paper";
+			console.log(choice[1]);
+					}
+		if (x == 82) {
+			document.getElementById("p1").innerHTML = "Rock";
+			console.log(choice[0]);
+		}
+		if (x == 83) {
+			document.getElementById("p1").innerHTML = "Sciscors";
+			console.log(choice[2]);
+		}
+
+		var randomNumber = Math.floor(Math.random() * 3);
+		console.log(randomNumber);
+
+		if (randomNumber == choice) {
+			console.log("tie");
+		}
+
+	};
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
